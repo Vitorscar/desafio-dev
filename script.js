@@ -73,8 +73,8 @@ function update(){
 scoreTable();update();
 
 /* votação */
-const SUPABASE_URL="";   // ex.: https://xxxx.supabase.co (veja supabase.sql)
-const SUPABASE_KEY="";   // chave anon pública
+const SUPABASE_URL="https://kjazvvaeakhcbspytdac.supabase.co";   // ex.: https://xxxx.supabase.co (veja supabase.sql)
+const SUPABASE_KEY="sb_publishable_2LLG7bX-YXwv5BthxzlkjA_IQDzsD0a";   // chave anon pública
 const VCATS=[["ui","Interface mais bonita e fácil de usar"],["idea","Melhor ideia e funcionalidades"],["use","Qual você usaria no dia a dia"]];
 const NAMES={k:"Kayo",v:"Vitor"};
 S.vid=S.vid||(crypto.randomUUID?crypto.randomUUID():String(Math.random()).slice(2)+Date.now());
