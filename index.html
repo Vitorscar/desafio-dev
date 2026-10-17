@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Duelo de Devs: Kayo Julian vs Vitor Scar</title>
+<meta name="description" content="14 dias, 2 devs, 1 produto real. Acompanhe o desafio RASTREIA.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,800&family=Figtree:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="hero">
+  <p class="tag">Desafio full stack aberto ao público</p>
+  <h1><span class="k">Kayo Julian</span><span class="vs">vs</span><span class="v">Vitor Scar</span></h1>
+  <p class="lead">Dois devs, o mesmo problema, 14 dias e R$ 0. Quem fizer o produto que as pessoas realmente usam, vence.</p>
+  <div class="tracker" aria-live="polite">
+    <div class="tr-head"><strong>RASTREIA</strong><span id="trCode">Pedido #0427 · Celular da Marina</span></div>
+    <ol id="steps"></ol>
+    <div class="tr-foot"><p id="trMsg"></p><button id="trBtn" type="button">Avançar etapa</button></div>
+  </div>
+</header>
+
+<main>
+<section>
+  <h2>O problema</h2>
+  <p>Quem deixa o celular na assistência ou o carro na oficina fica sem saber se já chegou, se está em análise ou se está pronto. Liga, manda mensagem, volta lá. O dono perde horas respondendo “e o meu?”.</p>
+  <p><strong>RASTREIA</strong> é o rastreio de serviço, como o de uma encomenda: o dono muda a etapa e o cliente vê pelo link, sem instalar nada e sem criar conta.</p>
+</section>
+
+<section>
+  <h2>Regras</h2>
+  <ul class="rules">
+    <li><b>14 dias</b> para entregar um MVP funcional.</li>
+    <li><b>R$ 0</b> de orçamento: planos free de Supabase e GitHub Pages.</li>
+    <li><b>Mesma stack:</b> HTML, CSS, JavaScript, Supabase (Auth, Realtime, RLS) e GitHub.</li>
+    <li><b>Dois repositórios</b> públicos, um por dev, com commits diários.</li>
+    <li><b>Nada de segredos:</b> nunca mostre chaves, senhas ou dados reais de clientes.</li>
+    <li><b>Dados de clientes:</b> aviso de privacidade simples e opção de apagar dados (LGPD).</li>
+  </ul>
+</section>
+
+<section id="blocos">
+  <div class="sec-head">
+    <h2>Blocos e metas</h2>
+    <label class="start">Início do desafio <input type="date" id="startDate"></label>
+  </div>
+  <p id="dayInfo" class="muted"></p>
+  <div class="bars">
+    <div><span class="k">Kayo</span><div class="bar"><i id="barK"></i></div><b id="pctK">0%</b></div>
+    <div><span class="v">Vitor</span><div class="bar"><i id="barV"></i></div><b id="pctV">0%</b></div>
+  </div>
+  <div id="blocks"></div>
+</section>
+
+<section id="votacao">
+  <h2>Vote no que está melhor</h2>
+  <p>Teste as duas demos e vote. Um voto por categoria. O placar aparece para os dois devs e serve de motivação: quem está atrás tem tempo de virar.</p>
+  <p id="cheer" class="cheer"></p>
+  <div id="votes"></div>
+  <p id="voteNote" class="muted"></p>
+</section>
+
+<section>
+  <h2>Placar final</h2>
+  <p class="muted">A funcionalidade vem das metas marcadas acima. Os outros critérios recebem nota de 0 a 10 de um avaliador que não participou do desenvolvimento.</p>
+  <div class="scroll"><table id="score"></table></div>
+  <p class="muted">Desempate: vence quem tiver mais uso espontâneo por pessoas reais.</p>
+</section>
+
+<section>
+  <h2>Combinado entre os dois</h2>
+  <p>Antes da primeira linha de código, registrem por escrito:</p>
+  <ul>
+    <li>Quem é dono de cada implementação do código.</li>
+    <li>Como ficam receita, despesas e prêmio se o produto faturar.</li>
+    <li>Quem dá suporte e corrige falhas depois do desafio.</li>
+    <li>O que acontece se alguém sair do projeto.</li>
+  </ul>
+</section>
+
+<section>
+  <h2>Como a comunidade ajuda</h2>
+  <ul>
+    <li>Testa as demos e conta onde travou.</li>
+    <li>Abre <i>Issues</i> nos repositórios com bugs e ideias.</li>
+    <li>Indica donos de assistência ou oficina para testar de verdade.</li>
+    <li>Vota na versão que usaria no dia a dia.</li>
+  </ul>
+</section>
+</main>
+<footer>Duelo de Devs · Kayo Julian vs Vitor Scar · produto: RASTREIA</footer>
+<script src="script.js"></script>
+</body>
+</html>
